@@ -1,5 +1,5 @@
 import pygtrie as trie
-import myWordVector2 as w2v
+import myWordVector as w2v
 import torch
 import fasttext
 import random
