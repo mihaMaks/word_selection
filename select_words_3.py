@@ -3,7 +3,7 @@ import myWordVector as w2v
 import torch
 import fasttext
 import random
-import time
+import pickle
 
 
 # python3 select_words_3.py --data dev.txt --model model.bin --out out_dev.txt --select 2 --prefix 3 --suffix 3
@@ -37,10 +37,10 @@ def main(args):
     weights = torch.ones(3)
     weight1 = 0.3
     if args.w1:
-        weights[0] = args.w1
+        weights[0] = float(args.w1)
     weight2 = 0.3
     if args.w2:
-        weights[1] = args.w2
+        weights[1] = float(args.w2)
     weights[2] = 1 - weight1 - weight2
     data_size = 0
     input_data = open(args.data, "r")
@@ -59,6 +59,15 @@ def main(args):
         line = input_data.readline()
         line = line.strip("\n")
         data_size += 1
+    afile = open('trie_data.pkl', 'wb')
+    bfile = open('my_dict.pkl', 'wb')
+    cfile = open('suff_data.pkl', 'wb')
+    pickle.dump(trie_data, afile)
+    pickle.dump(trie_data, bfile)
+    pickle.dump(trie_data, cfile)
+    afile.close()
+    bfile.close()
+    cfile.close()
 
     # CALCULATING myWordVector PARAMETERS
     sum_of_prob_sc = 0

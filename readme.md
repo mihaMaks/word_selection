@@ -6,7 +6,8 @@ After discussion with my mentor we decided to use words that were both in
 *pretrained fasttext model vocabulary* and in *https://huggingface.co/datasets/cjvt/sloleks* table
 
 - file: pret_ft_words.txt contain all nouns and verbs from pretrained fasttext model vocabulary
-- file: checked_words_3.txt is final data from witch selection will be/was made
+- file: checked_words_3.txt is final data from witch selection will be/was made (verbs:nouns ratio == 1:3)  
+
 
 ## Selection codes:
 
@@ -15,4 +16,11 @@ After discussion with my mentor we decided to use words that were both in
 - select_words_3.py: final code that is a little faster than the second code
 
 ## Selected words
-This file is still in development mode
+    out_checked_words.txt: 
+        - prefix_size: 3
+        - suffix_size: 3
+        - n_neighbours: 5
+        - prefix_vec weight: 0.3
+        - suffix_vec weight: 0.3
+        - cosine_vec: 0.4
+        - verbs:nouns == 27:73
