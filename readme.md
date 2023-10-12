@@ -33,3 +33,12 @@ After discussion with my mentor we decided to use words that were both in
         - suffix_vec weight: 0.3
         - cosine_vec: 0.3
         - verbs:nouns == 26:74
+
+    out_checked_words_3.txt: 
+        - prefix_size: 4
+        - suffix_size: 2
+        - n_neighbours: 5
+        - prefix_vec weight: 0.4
+        - suffix_vec weight: 0.2
+        - cosine_vec: 0.4
+        - verbs:nouns == 27:73

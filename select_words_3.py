@@ -63,17 +63,28 @@ def main(args):
     bfile = open('my_dict.pkl', 'wb')
     cfile = open('suff_data.pkl', 'wb')
     pickle.dump(trie_data, afile)
-    pickle.dump(trie_data, bfile)
-    pickle.dump(trie_data, cfile)
+    pickle.dump(my_dict, bfile)
+    pickle.dump(suff_data, cfile)
     afile.close()
     bfile.close()
     cfile.close()
-
+    """
+    file1 = open('trie_data.pkl', 'rb')
+    file2 = open('my_dict.pkl', 'rb')
+    file3 = open('suff_data.pkl', 'rb')
+    tire_data = pickle.load(file1)
+    my_dict = pickle.load(file2)
+    suff_data = pickle.load(file3)
+    file1.close()
+    file2.close()
+    file3.close()
+    
+    """
     # CALCULATING myWordVector PARAMETERS
     sum_of_prob_sc = 0
     for key in my_dict.keys():
         v = my_dict[key]
-        for i in range(1, min(len(v.word), pref_size) + 1):
+        for i in range(1, min(len(v.word), max(pref_size, suff_size)) + 1):
             make_string_vec(i, v.word, v.prefix_vec, trie_data, data_size, i == 1)
             make_string_vec(i, v.reverse_word, v.suffix_vec, suff_data, data_size, i == 1)
         v.similarity_vec[0] = torch.norm(v.prefix_vec)

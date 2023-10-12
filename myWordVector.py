@@ -9,8 +9,8 @@ class WVector:
         self.pos = pos
         self.reverse_word = reverse_word
         self.embeding = 0
-        self.prefix_vec = torch.zeros(prefix_size)
-        self.suffix_vec = torch.zeros(suffix_size)
+        self.prefix_vec = torch.zeros(max(prefix_size, suffix_size))
+        self.suffix_vec = torch.zeros(max(prefix_size, suffix_size))
         self.cosine_vec = torch.zeros(n_neighbours)
         self.prefix_sim_mean = 0
         self.suffix_sim_mean = 0
