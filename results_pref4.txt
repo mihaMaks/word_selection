@@ -1,0 +1,97 @@
+out_checked_words.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre...    3       85          24099
+raz...    3       45           7261
+pri...    3       43           5713
+pod...    3       22           1553
+pro...    3       20           1335
+zas...    3       20           1265
+kon...    3       15            779
+pol...    3       15            715
+pov...    3       13            451
+zav...    3       13            382
+SUM:  1220714
+
+out_checked_words_2.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre...    3       83          24619
+pri...    3       54           9524
+raz...    3       44           6416
+kon...    3       24           2077
+pos...    3       20           1365
+pro...    3       18           1067
+izp...    3       16            819
+pod...    3       13            531
+pog...    3       13            456
+nas...    3       11            294
+SUM:  1288982
+
+out_checked_words_3.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre...    3       82          23045
+raz...    3       45           6952
+pri...    3       35           4103
+pod...    3       30           2954
+pos...    3       21           1209
+izp...    3       19           1146
+pro...    3       16            906
+zap...    3       16            743
+kon...    3       13            630
+izk...    3       12            435
+SUM:  1227814
+out_checked_words_4.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre        3  13646558122
+pri        3   454691425
+pro        3    99 34885
+pra        3    18  1088
+pod        3     8   182
+škr        3     4    32
+zma        3     4    31
+spr        3     3    23
+fot        3     3    22
+gli        3     3    16
+SUM:  35284637
+
+selected_words_5.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre        3  13556457860
+pri        3   407554061
+pro        3    77 21796
+raz        3    14   513
+pra        3    13   510
+zav        3    10   228
+spo        3     6   106
+škr        3     5    67
+zma        3     5    55
+zap        3     5    45
+SUM:  32735501
+
+selected_words_6.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre        3  10543940923
+pri        3   343390104
+pro        3    65 16139
+raz        3    29  2356
+sam        3    21  1667
+pra        3    12   437
+kom        3     9   264
+zav        3     8   145
+nas        3     7   119
+str        3     6   106
+SUM:  21344751
+
+selected_words_7.txt: 10 most common longest prefixes
+prefix | len | instances | distance_sum
+pre        3  13876713407
+pri        3   446657842
+pro        3    82 24688
+pra        3    17   848
+spr        3     7   154
+pod        3     7   142
+pos        3     4    36
+zma        3     4    30
+škr        3     3    12
+pla        3     2     6
+SUM:  35005464
+

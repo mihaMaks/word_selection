@@ -1,7 +1,9 @@
+import numpy as np
 import torch
 
+
 class WVector:
-    def __init__(self, word, lemma, pos, reverse_word, n_neighbours, prefix_size, suffix_size):
+    def __init__(self, word, lemma, pos, reverse_word, n_neighbours, prefix_size, suffix_size, root_size):
         self.word = word
         self.lemma = lemma
         self.pos = pos
@@ -9,10 +11,10 @@ class WVector:
         self.embeding = 0
         self.prefix_vec = torch.zeros(max(prefix_size, suffix_size))
         self.suffix_vec = torch.zeros(max(prefix_size, suffix_size))
-        self.cosine_vec = torch.zeros(n_neighbours)
+        self.root_vec = torch.zeros(root_size)
         self.prefix_sim_mean = 0
         self.suffix_sim_mean = 0
-        self.cosine_sim_mean = 0
+        self.root_diff_mean = 0
         self.similarity_vec = torch.zeros(3)
         self.probability_sc = 0
         self.probability_weight = 0
