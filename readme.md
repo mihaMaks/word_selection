@@ -27,7 +27,7 @@ When deciding which is best I  run some metrics that show:
 - noise: all wards that start with capital letter(names, surnames, english words)
 - root_diff_sum: value calculated for all pairs of words with the same prefix, using Levenshtein distance: [def make_root_vec()](select_words_4.py)
 
-With those two metrics and distribution in mind I suggest that [out_checked_words_2.txt](out_checked_words_2.txt)
+With those two metrics and distribution in mind I suggest that [selected_words_2.txt](selected_words_2.txt)
 
 ## Selected words files
     out_checked_words.txt: 
