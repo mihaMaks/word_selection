@@ -25,7 +25,7 @@ Those files were generated using *[select_words_4.py](select_words_4.py)*.
 For that reason best selection is one of the first three.
 When deciding which is best I  run some metrics that show:
 - noise: all wards that start with capital letter(names, surnames, english words)
-- root_diff_sum: value calculated for all pairs of words with the same prefix, using Levenshtein distance: [def make_root_vec()](select_words_4.py)
+- root_diff_sum: value calculated for all pairs of words with the same prefix, using Levenshtein distance: (line: 42)[def make_root_vec()](select_words_4.py)
 
 With those two metrics and distribution in mind I suggest that [selected_words_2.txt](selected_words_2.txt)
 
